@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>882</width>
+    <height>672</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>模型训练界面</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="apprcc.qrc">
+    <normaloff>:/img/img/icons/swimming.png</normaloff>:/img/img/icons/swimming.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/img/Settings/main_window_img/background1x.png);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <spacer name="verticalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>18</width>
+          <height>28</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <spacer name="horizontalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>22</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>训 练 模 型</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>18</width>
+          <height>30</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <spacer name="horizontalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QPushButton" name="load_train_pics">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>231</width>
+                  <height>231</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <underline>false</underline>
+                  <strikeout>false</strikeout>
+                  <kerning>true</kerning>
+                 </font>
+                </property>
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">
+QPushButton#load_train_pics{border-image: url(:/img/Settings/train_model_img/load_imgA.png);
+border-radius: 15px;}
+QPushButton#load_train_pics::hover{
+border-image: url(:/img/Settings/train_model_img/load_imgB.png);
+border-radius: 15px;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="class_files">
+                <property name="minimumSize">
+                 <size>
+                  <width>231</width>
+                  <height>231</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#class_files{border-image: url(:/img/Settings/train_model_img/label_txt_imgB.png);
+border-radius: 15px;}
+QPushButton#class_files::hover{
+border-image: url(:/img/Settings/train_model_img/label_txt_imgA.png);
+border-radius: 15px;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>18</width>
+                <height>28</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QPushButton" name="load_label_file">
+                <property name="minimumSize">
+                 <size>
+                  <width>231</width>
+                  <height>231</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#load_label_file{border-image: url(:/img/Settings/train_model_img/loa_annoB.png);
+border-radius: 15px;}
+QPushButton#load_label_file::hover{
+border-image: url(:/img/Settings/train_model_img/loa_annoA.png);
+border-radius: 15px;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="save_model">
+                <property name="minimumSize">
+                 <size>
+                  <width>231</width>
+                  <height>231</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#save_model{border-image: url(:/img/Settings/train_model_img/save_path_imgB.png);
+border-radius: 15px;}
+QPushButton#save_model::hover{
+border-image: url(:/img/Settings/train_model_img/save_path_imgA.png);
+border-radius: 15px;
+}
+</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>-1</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgba(173,180,170,1);
+font-size:20px</string>
+                </property>
+                <property name="text">
+                 <string>参数设置</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="clear_all">
+                <property name="font">
+                 <font>
+                  <pointsize>-1</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgba(173,180,170,1);
+font-size:20px</string>
+                </property>
+                <property name="text">
+                 <string>清空重置</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_10">
+                <item>
+                 <widget class="QLabel" name="trainmodel">
+                  <property name="styleSheet">
+                   <string notr="true">color:rgba(173,180,170,1);font-size:20px</string>
+                  </property>
+                  <property name="text">
+                   <string>训练模型种类</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color:rgba(65,72,112,1);color:white;</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>裂缝分类</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>裂缝分割</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QLabel" name="batch_size">
+                  <property name="minimumSize">
+                   <size>
+                    <width>3</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color:rgba(173,180,170,1);font-size:20px</string>
+                  </property>
+                  <property name="text">
+                   <string>batch_size</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="batch_com">
+                  <property name="minimumSize">
+                   <size>
+                    <width>80</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color:rgba(65,72,112,1);color:white;</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>16</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>32</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>64</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QLabel" name="epochs">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color:rgba(173,180,170,1);font-size:20px</string>
+                  </property>
+                  <property name="text">
+                   <string>epochs</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="epoch_com">
+                  <property name="minimumSize">
+                   <size>
+                    <width>80</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color:rgba(65,72,112,1);color:white;</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>50</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>100</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>200</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>300</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>400</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>600</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>1000</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                 <widget class="QLabel" name="learn_rate">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color:rgba(173,180,170,1);font-size:20px</string>
+                  </property>
+                  <property name="text">
+                   <string>learning_rate</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="learn_com">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color:rgba(65,72,112,1);color:white;</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>0.00001</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>0.0001</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>0.001</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>0.01</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>0.1</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="start_train">
+              <property name="minimumSize">
+               <size>
+                <width>231</width>
+                <height>231</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#start_train{border-image: url(:/img/Settings/train_model_img/start_train.PNG);
+border-radius: 15px;}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="app.qrc"/>
+  <include location="apprcc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

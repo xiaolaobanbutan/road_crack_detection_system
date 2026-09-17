@@ -1,0 +1,38 @@
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+.venv/
+venv/
+.pytest_cache/
+
+# Local accounts and generated logs
+userInfo.csv
+login_log.txt
+*.log
+
+# Model weights and private datasets
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+ptmodel/*
+!ptmodel/.gitkeep
+checkpoint/*
+!checkpoint/.gitkeep
+umodel/*
+!umodel/.gitkeep
+
+# Generated inference/training output
+result/*
+!result/.gitkeep
+Output/*
+!Output/.gitkeep
+unetimg/*
+!unetimg/.gitkeep
+!unetimg/test/
+unetimg/test/*
+!unetimg/test/.gitkeep
+labels.npy
+idx.npy

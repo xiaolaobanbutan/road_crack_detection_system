@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="img">
+    <file>Settings/main_window_img/train_A.png</file>
+    <file>Settings/main_window_img/train_B.png</file>
+    <file>Settings/main_window_img/detect_A.png</file>
+    <file>Settings/main_window_img/detect_B.png</file>
+    <file>Settings/main_window_img/background1x.png</file>
+    <file>Settings/main_window_img/background.jpg</file>
+    <file>Settings/main_window_img/annotation_A.png</file>
+    <file>Settings/main_window_img/annotation_B.png</file>
+    <file>Settings/main_window_img/login_pic.jpg</file>
+    <file>Settings/main_window_img/school.jpg</file>
+    <file>Settings/main_window_img/school_logo.jpg</file>
+    <file>Settings/train_model_img/label_txt_imgA.png</file>
+    <file>Settings/train_model_img/label_txt_imgB.png</file>
+    <file>Settings/train_model_img/loa_annoA.png</file>
+    <file>Settings/train_model_img/loa_annoB.png</file>
+    <file>Settings/train_model_img/load_imgA.png</file>
+    <file>Settings/train_model_img/load_imgB.png</file>
+    <file>Settings/train_model_img/save_path_imgA.png</file>
+    <file>Settings/train_model_img/save_path_imgB.png</file>
+    <file>Settings/train_model_img/start_train.PNG</file>
+
+  </qresource>
+</RCC>

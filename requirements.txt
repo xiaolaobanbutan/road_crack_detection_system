@@ -1,0 +1,17 @@
+# Python 3.8-3.10 environment recommended for this historical PySide6/mmcv project.
+# Install a matching PyTorch/torchvision pair for your CPU or CUDA setup first.
+PySide6>=6.4,<6.7
+numpy<2
+opencv-python
+Pillow
+matplotlib
+pandas
+scipy
+scikit-image
+filterpy
+PyYAML
+tqdm
+requests
+seaborn
+lxml
+mmcv>=1.7,<2
